@@ -468,7 +468,7 @@ int pawnMove(char **arr, int sRow, int sCol, int eRow, int eCol, int direction)
             return 1;
         }
     }
-    //hareket capraz ise hedef alan bos olmamalý
+    //hareket capraz ise hedef alan bos olmamali
     else if (eRow == sRow + direction &&( (sCol == eCol+1) || (sCol == eCol-1) ))
     {
         if (arr[eRow][eCol] != ' ')
@@ -558,7 +558,6 @@ void play(char **arr, int *turn)
     eMove = malloc(sizeof(char) * 3);
     do
     {
-        printf("\t\t\t          coded by Keritto\n");
         printf("%d. player turn: ", *turn+1);
         scanf("%2s %2s", sMove, eMove);
 
